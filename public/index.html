@@ -1,0 +1,875 @@
+<!DOCTYPE html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    
+    <title>AT-WORK</title>
+    
+    <style>
+      @import url("styles.css");
+
+      @font-face {
+        font-family: "Inter";
+        font-weight: 400;
+        font-style: normal;
+        src: url("/Inter/static/Inter-Regular.ttf");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-weight: 500;
+        font-style: normal;
+        src: url("/Inter/static/Inter-SemiBold.ttf");
+      }
+      @font-face {
+        font-family: "Inter";
+        font-weight: 300;
+        font-style: italic;
+        src: url("/Inter/static/Inter-Light.ttf");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <span class="header__title">
+        Все мои объявления
+      </span>
+
+      <nav class="header__menu">
+        <label
+          class="header__menu_name"
+          style="border-bottom: 3px solid black;"
+        >
+          <span>
+            Активные
+          </span>
+
+          <span class="cursive header__menu_name-count">
+            4
+          </span>
+        </label>
+        
+        <label class="header__menu_name">
+          <span>
+            Архив
+          </span>
+
+          <span class="cursive header__menu_name-count">
+            2
+          </span>
+        </label>
+
+        <label class="header__menu_name">
+          <span>
+            Черновики
+          </span>
+
+          <span class="cursive header__menu_name-count">
+            2
+          </span>
+        </label>
+      </nav>
+
+      <section class="filtered">
+        <section class="filtered-display">
+          <input type="checkbox">
+
+          <button class="button_take-off">
+            Снять с публикации
+          </button>
+        </section>
+
+        <section class="filtered-display">
+          <div class="dropdown">
+            <button class="selection">
+              Все объявления
+
+              <img src="icons/arr.png" style="margin-left: 6px;">
+            </button>
+            
+            <div class="dropdown-content">
+              <label>
+                <img src="icons/Union.png" >
+
+                <span>Задания</span>
+                
+                <div class="circle">3</div>
+              </label>
+
+              <label>
+                <img src="icons/settings.png" >
+                <span>Услуги</span>
+              </label>
+
+              <label>
+                <img src="icons/briefcase.png" >
+                <span>Вакансии</span>
+              </label>
+
+              <label>
+                <img src="icons/person.png" >
+                <span>Резюме</span>
+              </label>
+
+              <label>
+                <img src="icons/basket.png" >
+                <span>Куплю</span>
+              </label>
+
+              <label>
+                <img src="icons/mark.png" >
+                <span>Продам</span>
+              </label>
+
+              <label>
+                <img src="icons/hammer.png" >
+                <span>Лоты</span>
+              </label>
+
+              <label>
+                <img src="icons/handshake.png" >
+                <span>Тендеры</span>
+              </label>
+
+              <label>
+                <img src="icons/coolicon.png" >
+
+                <div class="dropdown-two">
+                  <div class="dropdown-two__content">
+                    <span>Изменить видимость</span>
+                    <span>Скачать</span>
+                    <span>Снять с публикации</span>
+                  </div>
+
+                  <button>
+                    Все
+                  </button>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="dropdown-date">
+            <button class="selection">
+              По дате публикации &nbsp; 🠕 
+
+              <img src="icons/arr.png" style="margin-left: 14px;">
+            </button>
+            
+            <div class="dropdown-date__content">
+              <label>
+                <span>По дате публикации</span>
+
+                <img src="icons/arrows-up.png" >
+              </label>
+
+              <label>
+                <span>По дате публикации</span>
+
+                <img src="icons/arrows_down.png" >
+              </label>
+
+              <label>
+                <span>По цене</span>
+
+                <img src="icons/arrows-up.png" >
+              </label>
+
+              <label>
+                <span>По цене</span>
+
+                <img src="icons/arrows_down.png" >
+              </label>
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <section class="products">
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/frame1.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_blue">Сделать что-то</span>
+                <span class="product__description_black">50 900 ₽</span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст. м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Тип задания: одноэтапное
+                </span>
+                <span class="product__description_thin">
+                  Тип публикации: горящее
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Отклики</span>
+                <span class="actions_new">4 
+                  <span style="color: lightblue;">+1</span>
+                </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">211 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/recommend.png" style="margin-right: 6px;">
+                <span class="actions">Подходят</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+
+                <div class="dropdown">
+                  <button>
+                    <img src="icons/more.png" style="margin-left: 6px;">
+                  </button>
+                  
+                  <div class="dropdown-content__more">
+                    <label>
+                      В архив
+                    </label>
+
+                    <label>
+                      Поделиться
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/Frame2.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_red">
+                  Куплю планшет Samsung
+                </span>
+                <span class="product__description_black">
+                  5 000 ₽
+                </span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст. м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Видимость: всем зарегистрированным
+                </span>
+                <span class="product__description_thin">
+                  Тип публикации: премиум
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Предложения</span>
+                <span class="actions_new">3</span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">211 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+
+                <div class="dropdown">
+                  <button>
+                    <img src="icons/more.png" style="margin-left: 6px;">
+                  </button>
+                  
+                  <div class="dropdown-content__more">
+                    <label>
+                      Изменить видимость
+                    </label>
+
+                    <label>
+                      Скачать
+                    </label>
+
+                    <label>
+                      Снять с публикации
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/Frame3.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_red">
+                  Продам кроссовки
+                </span>
+                <span class="product__description_black">
+                  5 000 ₽
+                </span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст. м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Видимость: всем зарегистрированным
+                </span>
+                <span class="product__description_thin">
+                  Тип публикации: поднятие в топ
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Предложения</span>
+                <span class="actions_new">3</span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">20 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+
+                <div class="dropdown">
+                  <button>
+                    <img src="icons/more.png" style="margin-left: 6px;">
+                  </button>
+                  
+                  <div class="dropdown-content__more">
+                    <label>
+                      Передать
+                    </label>
+
+                    <label>
+                      Продлевать
+                    </label>
+
+                    <label>
+                      В архив
+                    </label>
+
+                    <label>
+                      Поделиться
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/painter.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_orange">
+                  Художник
+                </span>
+                <span class="product__description_black">
+                  50 900 ₽
+                </span>
+
+                <section class="no-logo">
+                  <label>
+                    <img src="icons/briefcase_white.png" >
+                  </label>
+
+                  <div class="no-logo__name">
+                    <span class="no-logo__name_bold">ООО "АТ-ВОРК"</span>
+                    <span class="no-logo__name_thin">
+                      Санкт-Петербург, ст. м. Маяковская
+                    </span>
+                  </div>
+                </section>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Видимость: открытая
+                </span>
+                <span class="product__description_thin">
+                  Тип публикации: бесплатно
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Отклики</span>
+                <span class="actions_new">3 
+                  <span style="color: orange;">+1</span>
+                </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Приглашены</span>
+                <span class="actions_new">3</span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">Просмотры</span>
+                <span class="actions_new">268</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">Подходят</span>
+                <span class="actions_new"> 16 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+
+                <div class="dropdown">
+                  <button>
+                    <img src="icons/more.png" style="margin-left: 6px;">
+                  </button>
+                  
+                  <div class="dropdown-content__more">
+                    <label>
+                      Передать
+                    </label>
+
+                    <label>
+                      Продлевать
+                    </label>
+
+                    <label>
+                      В архив
+                    </label>
+
+                    <label>
+                      Поделиться
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/Frame4.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_pink">
+                  Царские монеты
+                </span>
+                <span class="product__description_black">
+                  17 000 ₽
+                </span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст.м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Видимость: всем зарегистрированным
+                </span>
+                <span class="product__description_thin">
+                  Тип аукциона: открытый
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/hammer_black.png" style="margin-right: 6px;">
+                <span class="actions">Ставки</span>
+                <span class="actions_new">4 
+                  <span style="color: pink;">+1</span>
+                </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">211 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/coins.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_pink">
+                  Царские монеты
+                </span>
+                <span class="product__description_black">
+                  17 000 ₽
+                </span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст.м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Видимость: всем зарегистрированным
+                </span>
+                <span class="product__description_thin">
+                  тендера: открытый
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/handshake_black.png" style="margin-right: 6px;">
+                <span class="actions">Заявки</span>
+                <span class="actions_new">4 
+                  <span style="color: pink;">+1</span>
+                </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">211 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+              </div>
+            </section>
+          </section>
+        </section>
+
+        <section class="row" style="justify-content: space-between;">
+          <section class="row">
+            <section class="col">
+              <img src="images/Frame5.png">
+            </section>
+
+            <section class="product__description">
+              <label class="col">
+                <span class="product__description_orange">
+                  Консультант
+                </span>
+                <span class="product__description_black">
+                  53 000 ₽
+                </span>
+
+                <span class="product__description_thin">
+                  Осталось 20 дней
+                </span>
+                <span class="product__description_thin">
+                  Санкт-Петербург, ст.м. Маяковская
+                </span>
+                <span class="product__description_thin">
+                  Видимость: всем зарегистрированным
+                </span>
+                <span class="product__description_thin">
+                  Тип публикации: бесплатно
+                </span>
+              </label>
+            </section>
+          </section>
+          
+          <section class="row">
+            <section class="col products__statistic">
+              <div class="row">
+                <img src="icons/vacancy.png" style="margin-right: 6px;">
+                <span class="actions">Мои отклики</span>
+                <span class="actions_new">4 
+                  <span style="color: orange;">+1</span>
+                </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/vacancy-plus.png" style="margin-right: 6px;">
+                <span class="actions">Приглашения</span>
+                <span class="actions_new"> 3 </span>
+              </div>
+
+              <div class="row">
+                <img src="icons/views.png" style="margin-right: 6px;">
+                <span class="actions">211 просмотров</span>
+              </div>
+              
+              <div class="row">
+                <img src="icons/like.png" style="margin-right: 10px;">
+                <span class="actions">В избранном</span>
+                <span class="actions_new"> 0 </span>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress">
+                  <div></div>
+                </div>
+                <span>48%</span>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="actions__buttons">
+                <button title="Продвинуть">
+                  <img src="icons/abowe.png">
+                </button>
+
+                <button title="Редактировать">
+                  <img src="icons/pencil.png">
+                </button>
+
+                <button title="Снять с публикации">
+                  <img src="icons/cloud.png">
+                </button>
+
+                <div class="dropdown">
+                  <button>
+                    <img src="icons/more.png" style="margin-left: 6px;">
+                  </button>
+                  
+                  <div class="dropdown-content__more">
+                    <label>
+                      Передать
+                    </label>
+
+                    <label>
+                      Продлевать
+                    </label>
+
+                    <label>
+                      В архив
+                    </label>
+
+                    <label>
+                      Поделиться
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <div id="app" />
+
+    <script type="text/javascript" src="js/app.js" />
+  </body>
+</html>
